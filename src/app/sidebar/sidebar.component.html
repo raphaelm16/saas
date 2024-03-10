@@ -1,0 +1,12 @@
+<div class="sidebar" *ngIf="isSidebar">
+   <nav>
+    <ul>
+      <li><a routerLink="/afspraken">Afspraken</a></li>
+      <li><button class="button" (click)="toggleSidebar()">Klap in</button></li>
+   </ul>
+   </nav>
+</div>
+
+<div class="collapsed-sidebar" *ngIf="!isSidebar">
+     <button class="collapsed-button" (click)="toggleSidebar()">></button>
+</div>

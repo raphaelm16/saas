@@ -1,0 +1,41 @@
+/* CSS-styling voor de tabel */
+table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif; /* Strak fonttype toevoegen */
+    margin-bottom: 30px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 5px; /* Padding toegevoegd */
+}
+
+th {
+    background-color: #14132B;
+    color: white;
+    padding: 20px 5px;
+}
+
+td{
+    padding: 10px 5px; /* Padding toegevoegd */
+}
+
+tr:nth-child(odd) {
+    background-color: #ba75fe50
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.status-button {
+    background-color: #BA75FE;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

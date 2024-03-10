@@ -1,0 +1,68 @@
+/* Normale sidebar stijl */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #14132B;
+    padding-top: 20px;
+    transition: width 0.5s; /* Overgangseffect toegevoegd */
+}
+
+/* Ingeklapte sidebar stijl */
+.collapsed-sidebar {
+    height: 100%;
+    width: 75px; /* Pas de breedte aan naar de gewenste breedte voor de ingeklapte sidebar */
+    transition: width 0.5s; /* Overgangseffect toegevoegd */
+    background-color: #14132B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #14132B;
+    padding-top: 20px;
+    transition: width 0.5s; /* Overgangseffect toegevoegd */
+}
+
+/* Stijl voor de ankertags in zowel de normale als de ingeklapte sidebar */
+.sidebar ul li a,
+.collapsed-sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Zorg ervoor dat de ankertags de volledige breedte van de sidebar beslaan */
+    padding: 5px; /* Voeg wat padding toe voor de ankertags */
+    font-family: 'Arial', sans-serif; /* Strak fonttype toevoegen */
+}
+
+/* Stijl voor de lijstitems in zowel de normale als de ingeklapte sidebar */
+.sidebar ul li,
+.collapsed-sidebar ul li {
+    list-style-type: none; /* Verwijder de bullet points */
+}
+
+.button {
+    color: white;
+    background-color: #14132B;
+    border-radius: 5px; /* Voeg afgeronde hoeken toe */
+    font-size: 16px; /* Vergroot de tekstgrootte */
+    padding: 5px 10px; /* Voeg wat ruimte toe rond de tekst */
+    border: 1px solid white; /* Voeg een witte rand toe */
+    cursor: pointer; /* Maak de cursor een pointer om aan te geven dat het een klikbaar element is */
+    margin-top: 100px;
+    display: block;
+}
+
+.collapsed-button{
+    color: white;
+    background-color: #14132B;
+    border-radius: 5px; /* Voeg afgeronde hoeken toe */
+    font-size: 16px; /* Vergroot de tekstgrootte */
+    padding: 5px 10px 5px 10px; /* Voeg wat ruimte toe rond de tekst */
+    border: 1px solid white; /* Voeg een witte rand toe */
+    cursor: pointer; /* Maak de cursor een pointer om aan te geven dat het een klikbaar element is */
+    text-align: center; /* Centreer de tekst */
+    margin: auto; /* Centreer de knop in de breedte */
+    display: block;
+}
+
+  
