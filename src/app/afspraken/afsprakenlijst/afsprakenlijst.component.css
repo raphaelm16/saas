@@ -1,0 +1,38 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Dit zorgt ervoor dat de randen van de cellen samenvallen, waardoor het eruitziet als een enkel massief blok */
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 10px;
+    border: none; /* Verwijder de randen van de cellen */
+    text-align: left;
+}
+
+th {
+    background-color: #14132B;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+tr:nth-child(odd) {
+    background-color: #ba75fe50;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.status-button {
+    background-color: #BA75FE;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

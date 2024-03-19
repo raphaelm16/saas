@@ -1,0 +1,39 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 200px; /* Aanpassen naar jouw wens */
+    padding: 8px;
+    border: 1px solid #BA75FE; /* Kleur van de rand */
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    background-color: #BA75FE; /* Achtergrondkleur van de knop */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #9e4ac7; /* Donkerdere kleur bij hover */
+  }
+  
+  
+  

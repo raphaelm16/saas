@@ -1,0 +1,67 @@
+.form-container {
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1;
+    padding-right: 10px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: calc(25%); /* Breedte aangepast voor uitlijning */
+    margin-right: 10px; /* Voeg wat rechtermarge toe tussen de velden */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: calc(60% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #BA75FE;
+    border-radius: 5px;
+}
+
+select {
+    width: calc(60% - 22px);
+    padding: 10px;
+    border: 1px solid #BA75FE;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-container {
+    text-align: right;
+    width: calc(81.5% - 22px);
+    margin-top: -35px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #A54CFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

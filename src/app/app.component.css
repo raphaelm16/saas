@@ -1,0 +1,14 @@
+  .container{
+    margin-top: 25px;
+  }
+
+  .expanded {
+    margin-left: 325px; /* De gewenste marge wanneer isSidebar true is */
+    margin-right: 125px;
+  }
+  
+  .collapsed {
+    margin-left: 150px; /* De gewenste marge wanneer isSidebar false is */
+    margin-right: 125px;
+  }
+  

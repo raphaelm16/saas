@@ -1,0 +1,24 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Naam</th>
+                <th>Afspraak datum</th>
+                <th>Email</th>
+                <th>Gemaakt door</th>
+                <th>Telefoonnummer</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let afspraak of afsprakenlijst">
+                <td>{{ afspraak.naam }} {{afspraak.achternaam}}</td>
+                <td>{{ afspraak.afspraakDatum | date: 'shortDate' }}</td>
+                <td>{{ afspraak.email }}</td>
+                <td>{{ afspraak.gemaaktDoorMedewerker }}</td>
+                <td>{{ afspraak.telefoonnummer }}</td>
+                <td><button class="status-button">Open</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

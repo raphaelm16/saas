@@ -1,0 +1,147 @@
+.filter-component {
+    display: flex;
+    flex-direction: column; /* Elementen onder elkaar plaatsen */
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .header {
+    font-family: sans-serif;
+  }
+  
+  .header-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-box {
+    margin-right: auto; /* Duwt de zoekbox naar links */
+  }
+  
+  .search-box input[type="text"] {
+    padding: 8px;
+    border: 1px solid #A54CFF;
+    border-radius: 8px;
+    font-family: sans-serif;
+    margin-left: 25px;
+    width: 100px; 
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end; /* Knoppen naar rechts uitlijnen */
+    margin-top: 10px;
+  }
+  
+  .filter-button, .new-appointment-button {
+    padding: 8px 17px;
+    border: 1px solid #A54CFF;
+    background-color: transparent;
+    color: #A54CFF;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .new-appointment-button {
+    margin-left: 10px;
+    background-color: #A54CFF;
+    color: #fff;
+  }
+
+  .new-appointment-button:hover {
+    background-color: #BA75FE;
+  }
+  
+  .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .status-options {
+    display: flex;
+  }
+  
+  .status-options span {
+    margin-right: 50px; /* Meer marge tussen "Open" en "Gesloten" */
+    font-family: sans-serif; /* Toegevoegd */
+    cursor: pointer;
+  }
+  
+  .status-options span:hover {
+    text-decoration: underline;
+    text-decoration-color: #A54CFF;
+    text-decoration-thickness: 2px;
+  }
+  
+  .action-buttons span {
+    margin-right: 55px; /* Marge tussen "Selecteer afspraak" en "Verwijder afspraak" */
+    font-family: sans-serif; /* Toegevoegd */
+    cursor: pointer;
+  }
+  
+  .action-buttons span:hover {
+    text-decoration: underline;
+    text-decoration-color: #A54CFF;
+    text-decoration-thickness: 2px;
+  }
+  
+  .delete-appointment {
+    background-color: #A54CFF;
+    padding: 8px 15px;
+    border: #A54CFF;
+    border-radius: 8px;
+    color: #fff;
+    font-family: sans-serif; /* Toegevoegd */
+    cursor: pointer;
+  }
+
+  .delete-appointment:hover {
+    background-color: #BA75FE;
+  }
+  
+/* Stijl voor de filtersectie */
+.filter-section {
+  margin: 20px;
+}
+
+/* Stijl voor de rijen met comboboxen */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Stijl voor de comboboxen */
+select {
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #A54CFF;
+  border-radius: 4px;
+  width: calc(33.33% - 40px);
+}
+
+/* Stijl voor de knoppen onderaan */
+.filter-buttons {
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Stijl voor de knoppen */
+.filter-buttons button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #BA75FE;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Stijl voor de knoppen:hover */
+.filter-buttons button:hover {
+  background-color: #A54CFF;
+}

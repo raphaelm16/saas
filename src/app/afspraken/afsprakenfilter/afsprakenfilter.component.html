@@ -1,0 +1,59 @@
+<div class="filter-component">
+    <div class="header-search">
+      <h1 class="header">Afspraken</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Zoeken...">
+      </div>
+      <div class="buttons">
+        <button class="filter-button" (click)="expandFilter()">Filters</button>
+        <button class="new-appointment-button" [routerLink]="['/afspraakcreatie']">Nieuwe afspraak</button>
+      </div>
+    </div>
+
+  <div *ngIf="isFilterExpanded == true">
+    <div class="filter-section">
+      <div class="row">
+          <!-- Eerste rij met comboboxen -->
+          <select>
+              <option disabled selected value="Vanaf datum">Vanaf datum</option>
+          </select>
+          <select>
+            <option disabled selected value="Tot en met datum">Tot en met datum</option>
+          </select>
+          <select>
+            <option disabled selected value="Naam">Naam</option>
+          </select>
+      </div>
+      <div class="row">
+          <!-- Tweede rij met comboboxen -->
+          <select>
+            <option disabled selected value="email">email</option>
+          </select>
+          <select>
+              <option disabled selected value="Gemaakt door">Gemaakt door</option>
+          </select>
+          <select>
+              <option Telefoonnummer="Telefoonnummer">Telefoonnummer</option>
+          </select>
+      </div>
+      <!-- Knoppen voor het activeren en wissen van de filters -->
+      <div class="filter-buttons">
+          <button>Filter</button>
+          <button>Wis</button>
+      </div>
+  </div>
+</div>
+    
+    <div class="status">
+      <div class="status-options">
+        <span>Vandaag</span>
+        <span>Open</span>
+        <span>Gesloten</span>
+      </div>
+      <div class="action-buttons">
+        <span>Selecteren</span>
+        <button class="delete-appointment">Verwijder</button>
+      </div>
+    </div>
+  </div>
+  
