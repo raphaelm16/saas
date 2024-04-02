@@ -1,7 +1,9 @@
 <div class="app-header">
     <div class="search-bar">
+      <div class="" [ngClass]="{'search-bar-expanded': isSidebar, 'search-bar-collapsed': !isSidebar}">
       <input type="text" placeholder="Zoeken...">
-      <button>Zoeken</button>
+       <button>Zoeken</button>
+      </div>
     </div>
   </div>
   

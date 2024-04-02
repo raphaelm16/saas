@@ -35,5 +35,11 @@
     background-color: #9e4ac7; /* Donkerdere kleur bij hover */
   }
   
-  
+  .search-bar-collapsed {
+    margin-left: 0px;
+  }
+
+  .search-bar-expanded{
+    margin-left: 150px;
+  }
   

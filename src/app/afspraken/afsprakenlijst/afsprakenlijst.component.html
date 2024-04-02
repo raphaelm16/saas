@@ -11,12 +11,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let afspraak of afsprakenlijst">
-                <td>{{ afspraak.naam }} {{afspraak.achternaam}}</td>
-                <td>{{ afspraak.afspraakDatum | date: 'shortDate' }}</td>
-                <td>{{ afspraak.email }}</td>
-                <td>{{ afspraak.gemaaktDoorMedewerker }}</td>
-                <td>{{ afspraak.telefoonnummer }}</td>
+            <tr *ngFor="let afspraak of service.afspraakList">
+                <td>{{afspraak.persoonId}}</td>
+                <td>{{afspraak.afspraakId}}</td>
+                <td>{{afspraak.datum}}</td>
+                <td>{{afspraak.notitie}}</td>
                 <td><button class="status-button">Open</button></td>
             </tr>
         </tbody>
